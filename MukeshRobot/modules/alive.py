@@ -10,20 +10,20 @@ from telethon import __version__ as tver
 from MukeshRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID,BOT_NAME,START_IMG
 
 PHOTO = [
-    "https://graph.org/file/d461e2a231919a9504572.jpg",
-    "https://graph.org/file/d461e2a231919a9504572.jpg",
-    "https://graph.org/file/d461e2a231919a9504572.jpg",
-    "https://graph.org/file/d461e2a231919a9504572.jpg",
-    "https://graph.org/file/d461e2a231919a9504572.jpg",
+    "https://graph.org/file/f93822ec2958136a01969.jpg",
+    "https://graph.org/file/f93822ec2958136a01969.jpg",
+    "https://graph.org/file/f93822ec2958136a01969.jpg",
+    "https://graph.org/file/f93822ec2958136a01969.jpg",
+    "https://graph.org/file/f93822ec2958136a01969.jpg",
 ]
 
 Mukesh = [
     [
-        InlineKeyboardButton(text="๏ ᴅᴇᴠ ๏", user_id=6851974966),
+        InlineKeyboardButton(text="๏ ᴅᴇᴠ ๏", user_id=OWNER_ID),
         InlineKeyboardButton(text="๏ ꜱᴜᴘᴘᴏʀᴛ ๏", url=f"https://t.me/virtualmidnight"),
     ],
     [
-        InlineKeyboardButton(text="๏ ғᴏᴜɴᴅᴇʀ ๏", user_id=6851974966),
+        InlineKeyboardButton(text="๏ ғᴏᴜɴᴅᴇʀ ๏", user_id=OWNER_ID),
         InlineKeyboardButton(text="๏ ᴀsᴜᴘᴀɴ ๏", url=f"https://t.me/Asupan_bokepviral"),
     ],
     [                         
@@ -58,7 +58,7 @@ async def restart(client, m: Message):
         START_IMG,
         caption=f"""**𝗵𝗮𝘆, 𝗴𝘄 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
-  ๏ ** ᴅᴇᴠ :** [ʙᴇʀʟɪɴ](tg://user?id=6851974966)
+  ๏ ** ᴅᴇᴠ :** [ᴀᴅɪʀᴀ](tg://user?id=OWNER_ID)
   
   ๏ ** ғᴏᴜɴᴅᴇʀ :** [ᴍɪᴅɴɪɢʜᴛ](https://t.me/+rZdBKCGw2Hk0MGI1)
    ━━━━━━━━━━━━━━━━━━━""",
