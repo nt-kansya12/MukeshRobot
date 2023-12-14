@@ -232,7 +232,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ʙᴇʀʟɪɴ ɪᴅᴜᴘ ᴋᴏᴋ ᴍᴇᴋ  !\n<b>ɢᴡ ɢᴀ ᴛɪᴅᴜʀ ᴅᴀʀɪ​:</b> <code>{}</code>".format(
+            caption="ᴀᴅɪʀᴀ ɪᴅᴜᴘ ᴋᴏᴋ ᴍᴇᴋ  !\n<b>ɢᴡ ɢᴀ ᴛɪᴅᴜʀ ᴅᴀʀɪ​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -583,7 +583,7 @@ Wᴀʀɴ Mᴀɴᴀɢᴇᴍᴇɴᴛ
         InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
      ],
                     [
-                        InlineKeyboardButton(text="• Dᴏɴᴀᴛᴇ •", url=f"https://t.me/Berlinmidnight"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="• Dᴏɴᴀᴛᴇ •", url=f"https://t.me/adiramontok"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
                     ]
                 ]
             ),
@@ -613,7 +613,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
             
             reply_markup=InlineKeyboardMarkup(
                 [[
-        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="https://t.me/berlinmidnight")
+        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="https://t.me/adiramontok")
                 ],
                  [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
@@ -1068,11 +1068,11 @@ def main():
         try:
             dispatcher.bot.send_photo(
                 f"@berlinmusic_support",
-                photo=f"https://graph.org/file/822c62595ccfde4acdc83.jpg",
+                photo=f"https://graph.org/file/f93822ec2958136a01969.jpg",
                 caption=f"""
 ✨ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.
 ━━━━━━━━━━━━━
-**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ ʙᴇʀʟɪɴ**
+**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ ᴀᴅɪʀᴀ**
 **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{y()}`
 **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ:** `{telever}`
 **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{tlhver}`
