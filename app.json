@@ -1,7 +1,7 @@
 {
-    "name": "ʙᴇʀʟɪɴ ꭙ͢ ꝛσʙσᴛ",
+    "name": "ᴀᴅɪʀᴀ ᴍᴜsɪᴄ ʙᴏᴛ",
     "description": "Telegram Group Management Bot.",
-    "logo": "https://graph.org/file/d461e2a231919a9504572.jpg",
+    "logo": "https://graph.org/file/f93822ec2958136a01969.jpg",
     "keywords": [
        "telegram",
        "modular",
@@ -22,12 +22,12 @@
     "API_ID": {
        "description": "Get this value from my.telegram.org/apps.",
        "required": true,
-       "value": "20609170"
+       "value": "9989768"
     },
     "API_HASH": {
        "description": "Get this value from my.telegram.org/apps.",
        "required": true,
-       "value": "cd0fa6d4f7c452ec5617bb0b1e4dc479"
+       "value": "7bf22eb791b7f0c9c2ce0ad8fecd3ab7"
     },
     "ALLOW_EXCL": {
        "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
@@ -50,7 +50,7 @@
     "MONGO_DB_URI": {
        "description": "Required for database connections.",
        "required": true,
-       "value": ""
+       "value": "mongodb+srv://Hazume:1234@cluster0.3mwwkrl.mongodb.net/?retryWrites=true&w=majority"
     },
     "CASH_API_KEY": {
         " description": " Get your API key from https://www.alphavantage.co/support/#api-key",
@@ -66,12 +66,12 @@
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
-       "value": "6851974966"
+       "value": "1825139822"
     },
     "START_IMG": {
        "description": "Telegraph link of the image which will be shown at start command.",
        "required": true,
-       "value": "https://graph.org/file/d461e2a231919a9504572.jpg"
+       "value": "https://graph.org/file/f93822ec2958136a01969.jpg"
     },
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit Example - The_support_chat.",
@@ -81,7 +81,7 @@
     "TOKEN": {
        "description": "Get bot token from @BotFather on TG",
        "required": true,
-       "value": ""
+       "value": "6429002116:AAHjZgjeP5VA-HgKJmaMVw1DHHtQy8Qu8_c"
     }
  }
 }
