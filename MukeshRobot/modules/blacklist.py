@@ -69,7 +69,7 @@ def blacklist(update, context):
 
 @user_admin
 @typing_action
-def add_blacklist(update: context):
+def add_blacklist(update, context):
     msg = update.effective_message  # type: Optional[Message]
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
