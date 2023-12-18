@@ -422,15 +422,15 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/Berlinmusic_support"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/Asupan_bokepviral"
+                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/Asupan_viral18plus"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id=6024180996"
                         ),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ", url=f"https://t.me/Berlinmusic_support"
+                            text="ɢɪᴛʜᴜʙ", url=f"https://t.me/+50pybD6yWmE5Y2Fl"
                         ),
                     ],
                     [
