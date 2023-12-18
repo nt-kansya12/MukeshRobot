@@ -68,55 +68,41 @@ def blacklist(update, context):
 
 
 @user_admin
-@typing_action
-def add_blacklist(update, context):
-    msg = update.effective_message
-    chat = update.effective_chat
-    user = update.effective_user
+@typi@run_async
+@user_admin
+def add_blacklist(bot: Bot, update: Update):
+    msg = update.effective_message  # type: Optional[Message]
+    chat = update.effective_chat  # type: Optional[Chat]
+    user = update.effective_user  # type: Optional[User]
     words = msg.text.split(None, 1)
 
-    conn = connected(context.bot, update, chat, user.id)
-    if conn:
+    conn = connected(bot, update, chat, user.id)
+    if not conn == False:
         chat_id = conn
         chat_name = dispatcher.bot.getChat(conn).title
     else:
         chat_id = update.effective_chat.id
-        if chat.type == "𝗽𝗿𝗶𝘃𝗮𝘁𝗲":
-            return
+        if chat.type == "private":
+            exit(1)
         else:
             chat_name = chat.title
 
     if len(words) > 1:
         text = words[1]
-        to_blacklist = list(
-            {trigger.strip() for trigger in text.split("\n") if trigger.strip()}
-        )
+        to_blacklist = list(set(trigger.strip() for trigger in text.split("\n") if trigger.strip()))
         for trigger in to_blacklist:
             sql.add_to_blacklist(chat_id, trigger.lower())
 
         if len(to_blacklist) == 1:
-            send_message(
-                update.effective_message,
-                "𝗯𝗲𝗿𝗵𝗮𝘀𝗶𝗹 𝗴𝘄 𝘁𝗮𝗺𝗯𝗮𝗵𝗶𝗻 𝗺𝗲𝗸 <code>{}</code> 𝗸𝗲 𝗰𝗵𝗮𝘁: <b>{}</b>!".format(
-                    html.escape(to_blacklist[0]), html.escape(chat_name)
-                ),
-                parse_mode=ParseMode.HTML,
-            )
+            msg.reply_text(tld(chat.id, "Added <code>{}</code> to the blacklist in <b>{}</b>!").format(html.escape(to_blacklist[0]), chat_name),
+                           parse_mode=ParseMode.HTML)
 
         else:
-            send_message(
-                update.effective_message,
-                "Added blacklist trigger: <code>{}</code> in <b>{}</b>!".format(
-                    len(to_blacklist), html.escape(chat_name)
-                ),
-                parse_mode=ParseMode.HTML,
-            )
+            msg.reply_text(tld(chat.id, 
+             "Added <code>{}</code> to the blacklist in <b>{}</b>!").format(len(to_blacklist)), chat_name, parse_mode=ParseMode.HTML)
 
     else:
-        send_message(
-            update.effective_message,
-            "𝗸𝗮𝘀𝗶𝗵 𝗸𝗮𝘁𝗮 𝗸𝗮𝘁𝗮 𝗻𝘆𝗮 𝗱𝗼𝗻𝗴 𝗸𝗲𝗻𝘁𝗼𝗱 𝗺𝗮𝗻𝗮 𝘆𝗮𝗻𝗴 𝗺𝗮𝘂 𝗱𝗶𝘁𝗮𝗺𝗯𝗮𝗵 𝗸𝗲 𝗯𝗹𝗮𝗰𝗸𝗹𝗶𝘀𝘁.",
-	)
+        msg.reply_text(tld(chat.id, "Tell me what words you would like to add to the blacklist."))
  
 
 @user_admin
