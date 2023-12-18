@@ -20,11 +20,11 @@ PHOTO = [
 Mukesh = [
     [
         InlineKeyboardButton(text="๏ ᴅᴇᴠ ๏", user_id=OWNER_ID),
-        InlineKeyboardButton(text="๏ ꜱᴜᴘᴘᴏʀᴛ ๏", url=f"https://t.me/virtualmidnight"),
+        InlineKeyboardButton(text="๏ ꜱᴜᴘᴘᴏʀᴛ ๏", url=f"https://t.me/+50pybD6yWmE5Y2Fl"),
     ],
     [
         InlineKeyboardButton(text="๏ ғᴏᴜɴᴅᴇʀ ๏", user_id=OWNER_ID),
-        InlineKeyboardButton(text="๏ ᴀsᴜᴘᴀɴ ๏", url=f"https://t.me/Asupan_bokepviral"),
+        InlineKeyboardButton(text="๏ ᴀsᴜᴘᴀɴ ๏", url=f"https://t.me/Asupan_viral18plus"),
     ],
     [                         
         InlineKeyboardButton(
@@ -58,9 +58,9 @@ async def restart(client, m: Message):
         START_IMG,
         caption=f"""**𝗵𝗮𝘆, 𝗴𝘄 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
-  ๏ ** ᴅᴇᴠ :** [ᴀᴅɪʀᴀ](tg://user?id=OWNER_ID)
+  ๏ ** ᴅᴇᴠ :** [ᴀᴅɪʀᴀ](tg://user?id=1825139822)
   
-  ๏ ** ғᴏᴜɴᴅᴇʀ :** [ᴍɪᴅɴɪɢʜᴛ](https://t.me/+rZdBKCGw2Hk0MGI1)
+  ๏ ** ғᴏᴜɴᴅᴇʀ :** [ᴍɪᴅɴɪɢʜᴛ](https://t.me/+50pybD6yWmE5Y2Fl)
    ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )
