@@ -68,8 +68,7 @@ def blacklist(update, context):
 
 
 @user_admin
-@typi@run_async
-@user_admin
+@typing_action
 def add_blacklist(bot: Bot, update: Update):
     msg = update.effective_message  # type: Optional[Message]
     chat = update.effective_chat  # type: Optional[Chat]
