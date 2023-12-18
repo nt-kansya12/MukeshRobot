@@ -93,7 +93,7 @@ def add_blacklist(update, context):
             sql.add_to_blacklist(chat_id, trigger.lower())
 
         if len(to_blacklist) == 1:
-            msg.reply_text(tld(chat.id, "Added <code>{}</code> to the blacklist in <b>{}</b>!").format(html.escape(to_blacklist[0]), chat_name), parse_mode=ParseMode.HTML)
+            msg.reply_text(chat.id, "Added <code>{}</code> to the blacklist in <b>{}</b>!".format(html.escape(to_blacklist[0]), chat_name), parse_mode=ParseMode.HTML)
 
         else:
             msg.reply_text(tld(chat.id, "Added <code>{}</code> to the blacklist in <b>{}</b>!").format(len(to_blacklist)), chat_name, parse_mode=ParseMode.HTML)
